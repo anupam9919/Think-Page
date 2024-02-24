@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Think-Page
 =======
 							Introduction
@@ -27,5 +26,3 @@ The main objective of the Project on Offline note taking is to manage the notes 
 		● Update the existing note
 		● Delete the note
 		● Add another note
-
->>>>>>> master
