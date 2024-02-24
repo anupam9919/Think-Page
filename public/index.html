@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Think Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p class="welcome">To err is human, But to take notes are saviour</p>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+
+            <form action="/register" method="post">
+                <h1>Create Account</h1>
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="confirmpassword" placeholder="Confirm Password">
+                <button>Register</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form class="form_signin" action="/login" method="POST">
+                <h1>Sign In</h1>
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <a href="#">Forgot Your Password</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep thinking with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hey, Thinker!</h1>
+                    <p>Enter your details and create ideas with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+
+
+</body>
+
+</html>
